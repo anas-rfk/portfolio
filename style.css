@@ -90,7 +90,7 @@ body {
 .project-thumb {
   width: 100%;
   display: block;
-  height: 250px;     /* تحدد ارتفاع موحّد لجميع الصور */
+  height: 500px;     /* تحدد ارتفاع موحّد لجميع الصور */
   object-fit: cover;
 }
 
