@@ -265,10 +265,10 @@ body {
 
 /* QR Code */
 .qr-code {
-    width: 200px;
-    height: 200px;
-    border: 3px solid red;
-    box-shadow: 0 0 30px red;
+    width: 250px; /* أكبر من قبل */
+    height: 250px;
+    border: none; /* حذف الإطار الأحمر */
+    box-shadow: 0 0 40px red; /* glow فقط */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
