@@ -274,4 +274,16 @@ body {
 html, body {
     overflow-x: hidden;
 }
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+header, footer {
+    width: 100%;
+    overflow: hidden;
+}
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
 
