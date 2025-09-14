@@ -270,3 +270,8 @@ body {
     border: none; /* حذف الإطار */
     box-shadow: none; /* حذف glow */
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
