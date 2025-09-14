@@ -182,3 +182,97 @@ footer {
     font-size: 0.9rem;
   }
 }
+/* Reset & Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    overflow: hidden;
+}
+
+/* Stars background */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.stars::before,
+.stars::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: transparent;
+    box-shadow: 
+        50px 100px white,
+        200px 150px white,
+        300px 50px white,
+        400px 200px white,
+        600px 100px white,
+        800px 250px white,
+        1000px 50px white,
+        1200px 180px white;
+    animation: twinkle 3s infinite alternate;
+}
+
+.stars::after {
+    animation-delay: 1.5s;
+}
+
+@keyframes twinkle {
+    0% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
+/* Container for profile + name + QR */
+.qr-container {
+    position: relative;
+    max-width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 40px red;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Profile pic */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 30px red;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Name */
+.name {
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* QR Code */
+.qr-code {
+    width: 200px;
+    height: 200px;
+    border: 3px solid red;
+    box-shadow: 0 0 30px red;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.qr-code:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 60px red;
+}
