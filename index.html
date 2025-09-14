@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Anas RAFIK — Portfolio </title>
+  <!-- Remarque: ajoute un file style.css plus tard pour le style -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- =======================
+       HEADER / HERO
+       Remplace "images/me.jpg" par ta photo (ou une URL)
+  ======================== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <figure class="me">
+        <!-- Remplacer src par images/mon-photo.jpg ou une URL -->
+        <img src="images/moi.jpg" alt="Photo de Anas" width="220" height="220">
+      </figure>
+
+      <div class="intro">
+        <h1>Anas RAFIK</h1>
+        <p class="short-desc">
+          <strong>Études :</strong>
+          <strong>Niveau :</strong> 2ème année — Développement digital<br>
+          <strong>Âge :</strong> 20 ans <!-- modifie l'age si besoin -->
+        </p>
+        <p class="bio">
+          Je suis un étudiant passionné par le développement digital. J'apprends le Full Stack et je réalise des projets
+          (Site , Platfeorme etc...) Voici quelques projets realiser récents.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================
+       PROJETS
+  ======================== -->
+  <main>
+    <section id="projects" class="projects-section">
+      <h2>Mes projets</h2>
+
+      <div class="projects-container">
+
+        <!-- ===== Projet 1 ===== -->
+        <article class="project-card">
+          <!-- Remplacer l'image par images/project1.png ou URL -->
+          <img class="project-thumb" src="https://picsum.photos/seed/proj1/600/400" alt="Screenshot Projet 1"
+            width="600" height="400">
+
+          <div class="project-content">
+            <h3 class="project-title">Unknown</h3>
+            <p class="project-sub">
+              <strong>Technologies :</strong> HTML • CSS • PHP • MySQL
+            </p>
+
+            <div class="project-actions">
+              <!-- Remplacer les href par tes vrais liens -->
+              <a class="btn btn-code" href="https://github.com/TON_USERNAME/library-management" target="_blank"
+                rel="noopener noreferrer" aria-label="Voir le code sur GitHub - Gestion de bibliothèque">
+                💻 Voir le code
+              </a>
+              <a class="btn btn-live" href="https://exemple-library.netlify.app" target="_blank"
+                rel="noopener noreferrer" aria-label="Voir le site en live - Gestion de bibliothèque">
+                🌐 Voir le site
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== Projet 2 ===== -->
+        <article class="project-card">
+          <!-- Remplacer l'image par images/project2.png ou URL -->
+          <img class="project-thumb" src="https://picsum.photos/seed/proj2/600/400" alt="Screenshot Projet 2"
+            width="600" height="400">
+
+          <div class="project-content">
+            <h3 class="project-title">Unknown/</h3>
+            <p class="project-sub">
+              <strong>Technologies :</strong> HTML • CSS • JavaScript
+            </p>
+
+            <div class="project-actions">
+              <!-- Remplacer les href par tes vrais liens -->
+              <a class="btn btn-code" href="https://github.com/TON_USERNAME/todo-list" target="_blank"
+                rel="noopener noreferrer" aria-label="Voir le code sur GitHub - Todo List">
+                💻 Voir le code
+              </a>
+              <a class="btn btn-live" href="https://exemple-todo.netlify.app" target="_blank" rel="noopener noreferrer"
+                aria-label="Voir le site en live - Todo List">
+                🌐 Voir le site
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div> <!-- .projects-container -->
+    </section>
+
+    <!-- =======================
+         CONTACT / FOOTER
+    ======================== -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anasrafik894@gmail.com">anasrafik894@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anas-rafik-94bb2133b/" target="_blank"
+          rel="noopener noreferrer">linkedin.com/Anas Rafik</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Anas — Portfolio</p>
+  </footer>
+
+  <!-- Petit script pour l'année (facultatif) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
