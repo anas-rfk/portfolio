@@ -265,14 +265,8 @@ body {
 
 /* QR Code */
 .qr-code {
-    width: 250px; /* أكبر من قبل */
-    height: 250px;
-    border: none; /* حذف الإطار الأحمر */
-    box-shadow: 0 0 40px red; /* glow فقط */
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.qr-code:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 60px red;
+    width: 300px; /* أكبر شوية */
+    height: 300px;
+    border: none; /* حذف الإطار */
+    box-shadow: none; /* حذف glow */
 }
