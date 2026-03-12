@@ -574,3 +574,16 @@ footer {
     font-size: 0.9rem;
   }
 }
+.hero img,
+.intro h1,
+.project-card,
+.pro-card,
+.about-detail-card,
+.btn {
+  will-change: transform;
+}
+.project-card,
+.pro-card,
+.about-detail-card {
+  transform-style: preserve-3d;
+}
