@@ -247,6 +247,101 @@ section {
 }
 
 /* ======================
+   PROFESSIONAL INFO
+====================== */
+.professional-section {
+  padding: 80px 0 20px;
+}
+
+.professional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 170, 255, 0.12);
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0, 170, 255, 0.12);
+  padding: 26px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 170, 255, 0.2);
+}
+
+.info-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 18px;
+  color: #007acc;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.info-card h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #00bfff, #007acc);
+}
+
+.info-item {
+  margin-bottom: 18px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-date {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(0, 191, 255, 0.1);
+  color: #007acc;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.info-item p {
+  color: #4a5560;
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(0, 191, 255, 0.1);
+  color: #007acc;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 170, 255, 0.12);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  background: rgba(0, 191, 255, 0.16);
+}
+
+/* ======================
    PROJECTS
 ====================== */
 .projects-section {
@@ -398,6 +493,10 @@ footer {
   .hero-actions,
   .project-actions {
     justify-content: center;
+  }
+
+  .professional-grid {
+    grid-template-columns: 1fr;
   }
 }
 
