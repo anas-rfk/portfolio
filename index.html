@@ -1,126 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title> Anas RAFIK — Portfolio </title>
-  <!-- Remarque: ajoute un file style.css plus tard pour le style -->
+  <title>Anas RAFIK — Portfolio</title>
+  <meta name="description" content="Portfolio de Anas RAFIK, étudiant en développement digital full stack et gestion des entreprises.">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
 
-  <!-- =======================
-       HEADER / HERO
-       Remplace "images/me.jpg" par ta photo (ou une URL)
-  ======================== -->
+  <nav class="navbar">
+    <div class="nav-logo">AR</div>
+    <div class="nav-links">
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="hero-inner">
       <figure class="me">
-        <!-- Remplacer src par images/mon-photo.jpg ou une URL -->
-        <img src="images/moi.jpg" alt="Photo de Anas" width="220" height="220">
+        <img src="images/moi.jpg" alt="Photo de Anas RAFIK" width="220" height="220">
       </figure>
 
       <div class="intro">
-        <h2>Anas RAFIK</h2>
+        <span class="badge">Développeur Full Stack en formation</span>
+        <h1>Anas RAFIK</h1>
+
         <p class="short-desc">
-          <strong>Études :</strong> la gestion des entreprises / Développement digital option full stack.<br>
-          <strong>Niveau :</strong> Technicien specialisee en gestion des entreprises.<br>
-                                    2ème année Développement digital option full stack.<br>
-          <strong>Âge :</strong> 20 ans <!-- modifie l'age si besoin -->
+          <strong>Études :</strong> Gestion des entreprises / Développement digital option Full Stack.<br>
+          <strong>Niveau :</strong> Technicien spécialisé en gestion des entreprises.<br>
+          2ème année en Développement digital option Full Stack.<br>
+          <strong>Âge :</strong> 20 ans
         </p>
+
         <p class="bio">
-          Je suis un étudiant passionné par le développement digital. J'apprends le Full Stack et je réalise des projets
-          (Site , Platfeorme etc...) Voici quelques projets realiser récents.
+          Je suis un étudiant passionné par le développement digital. J’apprends le Full Stack
+          et je réalise des projets web et plateformes modernes. Voici une sélection de mes projets récents.
         </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- =======================
-       PROJETS
-  ======================== -->
   <main>
     <section id="projects" class="projects-section">
-      <h1>Mes projets</h1>
+      <h2 class="section-title">Mes projets</h2>
+      <p class="section-subtitle">Une sélection de travaux académiques et projets web.</p>
 
       <div class="projects-container">
 
-        <!-- ===== Projet 1 ===== -->
         <article class="project-card">
-          <!-- Remplacer l'image par images/project1.png ou URL -->
-          <img class="project-thumb" src="images/card1.png" alt="Screenshot Projet 1"
-            width="600" height="400">
+          <div class="project-image-wrapper">
+            <img class="project-thumb" src="images/card1.png" alt="Mémoire de fin d'études" width="600" height="400">
+          </div>
 
           <div class="project-content">
-            <h3 class="project-title">La Memoire de mon projet de fin d'etudes</h3>
+            <span class="project-tag">Projet académique</span>
+            <h3 class="project-title">Mémoire de fin d’études</h3>
             <p class="project-sub">
-              <strong>Sujet :</strong> le transport maritime ET Le rôle des ports 
-marocains dans le commerce international.
+              <strong>Sujet :</strong> Le transport maritime et le rôle des ports marocains
+              dans le commerce international.
             </p>
 
             <div class="project-actions">
-              <!-- Remplacer les href par tes vrais liens -->
-              <a class="btn btn-code" href="Memoire.pdf" target="_blank"
-                rel="noopener noreferrer" aria-label="Voir le memoire de mon projet de fin d'etudes de la gestion des entreprises">
-                📄 Voir Ma Memoire
+              <a class="btn btn-code" href="Memoire.pdf" target="_blank" rel="noopener noreferrer">
+                📄 Voir mon mémoire
               </a>
-              
             </div>
           </div>
         </article>
 
-        <!-- ===== Projet 2 ===== -->
         <article class="project-card">
-          <!-- Remplacer l'image par images/project2.png ou URL -->
-          <img class="project-thumb" src="https://picsum.photos/seed/proj2/600/400" alt="Screenshot Projet 2"
-            width="600" height="400">
+          <div class="project-image-wrapper">
+            <img class="project-thumb" src="https://picsum.photos/seed/proj2/600/400" alt="Projet web" width="600" height="400">
+          </div>
 
           <div class="project-content">
-            <h3 class="project-title">Unknown</h3>
+            <span class="project-tag">Projet web</span>
+            <h3 class="project-title">Nom du projet</h3>
             <p class="project-sub">
               <strong>Technologies :</strong> HTML • CSS • JavaScript
             </p>
 
             <div class="project-actions">
-              <!-- Remplacer les href par tes vrais liens -->
-              <a class="btn btn-code" href="https://github.com/TON_USERNAME/todo-list" target="_blank"
-                rel="noopener noreferrer" aria-label="Voir le code sur GitHub - Todo List">
+              <a class="btn btn-code" href="https://github.com/TON_USERNAME/todo-list" target="_blank" rel="noopener noreferrer">
                 💻 Voir le code
               </a>
-              <a class="btn btn-live" href="https://exemple-todo.netlify.app" target="_blank" rel="noopener noreferrer"
-                aria-label="Voir le site en live - Todo List">
+              <a class="btn btn-live" href="https://exemple-todo.netlify.app" target="_blank" rel="noopener noreferrer">
                 🌐 Voir le projet
               </a>
             </div>
           </div>
         </article>
 
-      </div> <!-- .projects-container -->
+      </div>
     </section>
 
-    <!-- =======================
-         CONTACT / FOOTER
-    ======================== -->
     <section id="contact" class="contact-section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:anasrafik894@gmail.com">anasrafik894@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/anas-rafik-94bb2133b/" target="_blank"
-          rel="noopener noreferrer">linkedin.com/Anas Rafik</a></p>
+      <p>Email : <a href="mailto:anasrafik894@gmail.com">anasrafik894@gmail.com</a></p>
+      <p>
+        LinkedIn :
+        <a href="https://www.linkedin.com/in/anas-rafik-94bb2133b/" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/anas-rafik
+        </a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Anas — Portfolio</p>
+    <p>© <span id="year"></span> Anas RAFIK — Portfolio</p>
   </footer>
 
-  <!-- Petit script pour l'année (facultatif) -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
