@@ -1,5 +1,6 @@
 const title = document.querySelector(".intro h1");
 const year = document.getElementById("year");
+const reveals = document.querySelectorAll(".reveal");
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -11,27 +12,23 @@ if (title) {
   setInterval(() => {
     glow = (glow + 1) % 360;
     title.style.textShadow = `
-      0 0 15px hsla(${glow}, 100%, 60%, 0.8),
+      0 0 15px hsla(${glow}, 100%, 60%, 0.85),
       0 0 35px hsla(${glow}, 100%, 55%, 0.55)
     `;
   }, 120);
 }
 
-/* apparition douce des cartes */
-const cards = document.querySelectorAll(".project-card");
+const revealOnScroll = () => {
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add("active");
     }
   });
-}, { threshold: 0.15 });
+};
 
-cards.forEach((card) => {
-  card.style.opacity = "0";
-  card.style.transform = "translateY(40px)";
-  card.style.transition = "all 0.7s ease";
-  observer.observe(card);
-});
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);

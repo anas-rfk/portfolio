@@ -4,21 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anas RAFIK — Portfolio</title>
-  <meta name="description" content="Portfolio de Anas RAFIK, étudiant en développement digital full stack et gestion des entreprises.">
+  <meta name="description" content="Portfolio de Anas RAFIK, étudiant en développement digital Full Stack.">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <nav class="navbar">
-    <div class="nav-logo">AR</div>
+    <div class="nav-logo">Anas RAFIK</div>
     <div class="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
       <a href="#projects">Projets</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero reveal">
     <div class="hero-inner">
       <figure class="me">
         <img src="images/moi.jpg" alt="Photo de Anas RAFIK" width="220" height="220">
@@ -37,7 +39,7 @@
 
         <p class="bio">
           Je suis un étudiant passionné par le développement digital. J’apprends le Full Stack
-          et je réalise des projets web et plateformes modernes. Voici une sélection de mes projets récents.
+          et je réalise des projets web modernes. Voici une sélection de mes projets récents.
         </p>
 
         <div class="hero-actions">
@@ -49,13 +51,46 @@
   </header>
 
   <main>
-    <section id="projects" class="projects-section">
-      <h2 class="section-title">Mes projets</h2>
-      <p class="section-subtitle">Une sélection de travaux académiques et projets web.</p>
+    <section id="about" class="about-section reveal">
+      <div class="section-header">
+        <h2>À propos</h2>
+        <p>Mon profil en quelques lignes.</p>
+      </div>
+
+      <div class="about-card">
+        <p>
+          Je développe progressivement mes compétences en HTML, CSS, JavaScript et en logique
+          de développement Full Stack. J’aime concevoir des interfaces propres, modernes et
+          agréables à utiliser. Mon objectif est de créer des projets utiles, performants et visuellement soignés.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section reveal">
+      <div class="section-header">
+        <h2>Compétences</h2>
+        <p>Technologies et outils que j’utilise.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">UI / UX Basics</div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section reveal">
+      <div class="section-header">
+        <h2>Mes projets</h2>
+        <p>Une sélection de travaux académiques et projets web.</p>
+      </div>
 
       <div class="projects-container">
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-image-wrapper">
             <img class="project-thumb" src="images/card1.png" alt="Mémoire de fin d'études" width="600" height="400">
           </div>
@@ -64,8 +99,7 @@
             <span class="project-tag">Projet académique</span>
             <h3 class="project-title">Mémoire de fin d’études</h3>
             <p class="project-sub">
-              <strong>Sujet :</strong> Le transport maritime et le rôle des ports marocains
-              dans le commerce international.
+              <strong>Sujet :</strong> Le transport maritime et le rôle des ports marocains dans le commerce international.
             </p>
 
             <div class="project-actions">
@@ -76,7 +110,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article class="project-card reveal">
           <div class="project-image-wrapper">
             <img class="project-thumb" src="https://picsum.photos/seed/proj2/600/400" alt="Projet web" width="600" height="400">
           </div>
@@ -102,15 +136,21 @@
       </div>
     </section>
 
-    <section id="contact" class="contact-section">
-      <h2>Contact</h2>
-      <p>Email : <a href="mailto:anasrafik894@gmail.com">anasrafik894@gmail.com</a></p>
-      <p>
-        LinkedIn :
-        <a href="https://www.linkedin.com/in/anas-rafik-94bb2133b/" target="_blank" rel="noopener noreferrer">
-          linkedin.com/in/anas-rafik
-        </a>
-      </p>
+    <section id="contact" class="contact-section reveal">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Tu peux me joindre ici.</p>
+      </div>
+
+      <div class="contact-card">
+        <p>Email : <a href="mailto:anasrafik894@gmail.com">anasrafik894@gmail.com</a></p>
+        <p>
+          LinkedIn :
+          <a href="https://www.linkedin.com/in/anas-rafik-94bb2133b/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/anas-rafik
+          </a>
+        </p>
+      </div>
     </section>
   </main>
 
