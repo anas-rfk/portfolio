@@ -57,14 +57,24 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  padding: 10px 40px;
 }
 
 .nav-logo {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #007acc;
-  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo img:hover {
+  transform: scale(1.04);
 }
 
 .nav-links {
