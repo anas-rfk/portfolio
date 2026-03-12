@@ -562,6 +562,7 @@ footer {
 
 .hero .bio p {
   margin-bottom: 16px;
+  color: black;
 }
 
 .hero .bio p:last-child {
